@@ -13,7 +13,9 @@ import java.time.LocalDate;
 @Entity
 @Data @Builder
 @AllArgsConstructor @NoArgsConstructor
-@Table(indexes = {
+@Table(
+        name="member",
+        indexes = {
         @Index(name="idx_member_gender", columnList = "gender"),
         @Index(name="idx_member_birthDate", columnList = "birthDate")
 })

@@ -237,7 +237,7 @@ footer > .inner h4 { color: #adadadab; }
 main .layout_width { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
 main .layout_width li { display: grid; grid-template-rows: repeat(1, 3fr); grid-auto-rows: minmax(30px, auto); gap: 10px; box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.24); padding: 10px; background: #fffffb; font-family: 'Dongle', sans-serif; border-radius: 15px; }
 main .layout_width li label { font-family: 'Poor Story', cursive;, sans-serif; font-size: 26px }
-main .layout_width img { width: 100%; border-radius: 15px; }
+main .layout_width .rimage { width: 100%; height: 130px; border-radius: 15px; margin-bottom: 10px; border: 1px solid #d5d5d5; }
 main .layout_width span > input[type='checkbox']~label { display: inline-block; height: 32px; line-height: 32px; padding-left: 33px; background:url("../../admin/images/star-off.png") no-repeat left center; margin-right: 13px; cursor: pointer; }
 main .layout_width span > input[type='checkbox']:checked~label { background:url("../../admin/images/star-on.png") no-repeat left center; }
 main .layout_width span > input[type='checkbox']~label.standalone { padding: 0; width: 28px; display: inline-block; margin: 0; }

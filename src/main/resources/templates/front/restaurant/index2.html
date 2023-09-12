@@ -22,7 +22,7 @@
             </span>
             <a th:href="@{/restaurant/view/{id}(id=*{id})}">
                 <th:block th:if="*{mainImages != null && !mainImages.isEmpty()}">
-                    <img th:each="file, status : *{mainImages}" th:if="${status.first}" th:src="${file.thumbsUrl[0]}">
+                    <div class='rimage' th:each="file, status : *{mainImages}" th:if="${status.first}" th:style="${#strings.concat('background:url(', file.thumbsUrl[0], '); background-size: cover;')}"></div>
                 </th:block>
                 <th:block th:unless="*{mainImages != null && !mainImages.isEmpty()}">
                     <div class="no_image">이미지 없음</div>
